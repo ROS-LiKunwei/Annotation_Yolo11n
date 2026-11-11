@@ -1,0 +1,8 @@
+Annotation_Yolo11n
+
+This repository packages the semantic point annotation and spatial heatmap method
+implemented during the RoboDojo deposit_coin experiments. It uses Ultralytics
+YOLO11n (AGPL-3.0); see LICENSE and https://github.com/ultralytics/ultralytics.
+The offline HTML annotator is adapted from the project's original point-label UI.
+No RoboDojo dataset images, trained weights, SSH credentials, or external task
+repositories are included. Users obtain model weights and datasets separately.

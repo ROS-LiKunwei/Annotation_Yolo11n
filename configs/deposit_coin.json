@@ -1,0 +1,19 @@
+{
+  "task": "deposit_coin",
+  "classes": {
+    "coin": {
+      "label": "硬币中心",
+      "definition": "硬币圆面的几何中心。侧视仅在能可靠定位中心时标点。不要标上缘、夹爪、空支架或金色反光；中心遮挡或出画选不可见，无法确定选忽略。"
+    },
+    "coin_slot": {
+      "label": "投币槽中心",
+      "definition": "存钱罐顶部黑色投币槽开口的中点，不是罐体或猪背中心。指定中心被遮住或出画选不可见，位置不确定选忽略。"
+    }
+  },
+  "cameras": ["cam_head", "cam_left_wrist", "cam_right_wrist"],
+  "camera_labels": {"cam_head": "头部相机", "cam_left_wrist": "左腕相机", "cam_right_wrist": "右腕相机"},
+  "seed": 20261111,
+  "train_episode_count": 24,
+  "val_episode_count": 6,
+  "frames_per_episode": 7
+}

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "annotation-yolo11n"
+version = "0.1.0"
+readme = "README.md"
+description = "Offline semantic point annotation and YOLO11n multi-scale spatial heatmaps"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = ["torch>=2.7,<2.8", "ultralytics==8.4.193", "numpy>=1.24", "opencv-python>=4.8", "Pillow>=10", "h5py>=3.8"]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "websockets>=12"]
+
+[project.scripts]
+annotation-yolo = "annotation_yolo11n.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["annotation_yolo11n*"]
+
+[tool.setuptools.package-data]
+annotation_yolo11n = ["templates/*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

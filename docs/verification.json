@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "all66_images_verified": true,
+  "all132_points_verified": true,
+  "original_checkpoint_state_keys_preserved": true,
+  "original_label_metrics": {
+    "known_points": 132,
+    "visible_points": 77,
+    "proposed_points": 75,
+    "correct_points": 72,
+    "precision": 0.96,
+    "recall": 0.935064935064935,
+    "f1": 0.9473684210526315,
+    "invisible_false_positives": 1,
+    "visible_missed": 3,
+    "median_error_px": 2.4589991116269037,
+    "mean_error_px": 3.3728866851727473,
+    "ignored_points": 0,
+    "distance_px": 10,
+    "confidence_threshold": 0.5
+  },
+  "unit_and_integration_tests": 9,
+  "pytest_result": "9 passed",
+  "offline_browser_roundtrip_verified": true,
+  "wheel_build_verified": true,
+  "installed_wheel_cli_verified": true,
+  "scope": "Portable annotation workflow; no VLM20k code or model weights published"
+}
